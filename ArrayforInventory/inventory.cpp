@@ -14,9 +14,10 @@ int main() {
 }
 
 void inventorySys() {
-	string items[3];
-	string number;
+	string items[3], number;
 	char responseA, Repeat;
+	int playerCaps;
+
 	do {
 
 		//for loop that stores items in the list array
