@@ -6,26 +6,30 @@ void inventorySys();
 int main() {
 
 	inventorySys();
+
 }
 
 void inventorySys() {
-	/*Start adding items to inventory*/
-	string array[3];
-	char useChoice;
-	int itemPos;
+	string items[3];
+	string number;
 
-	cout << "Enter 3 items: " << endl;
-
-	for (int i = 0; i < 3; i++)
-	{
-		cin >> array[i];
+	//for loop that stores items in the list array
+	cout << "Please enter the items that you are storing in your inventory: " << endl;
+	for (int i = 0; i < 3; i++) {
+		cin >> items[i];
 	}
+
+	//asking the user for which item they would like to delete
+	cout << "Enter the item that you are selling or using: " << endl;
+	cin >> number;
 	cout << endl;
 
-	cout << "The items you have avaible are: " << endl;
-	for (int j = 0; j < 3; j++) {
-		cout << array[j] << endl;
+	cout << "The items that are left in you inventory are: " << endl;
+	//for loop to delet an item from the array
+	for (int i = 0; i < 3; i++) {
+		if (items[i] != number) {
+			cout << items[i] << endl;
+		}
 	}
-	/*End adding items to inventory*/
 
 }
